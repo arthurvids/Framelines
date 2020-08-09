@@ -1,0 +1,688 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* POLICES */
+
+@font-face {
+    font-family: "ottanio";
+    src: url("fonts/OttanioShaded.otf");
+}
+
+@font-face {
+    font-family: "demode";
+    src: url("fonts/demode.otf");
+}
+
+@font-face {
+    font-family: "intellecta";
+    src: url("fonts/IntellectaBodoned Two.ttf");
+}
+
+@font-face {
+    font-family: "cabin";
+    src: url('fonts/cabinregular.woff2') format('woff2'),
+         url('fonts/cabinregular.woff') format('woff');
+}
+
+@font-face {
+    font-family: "natalia";
+    src: url("fonts/Natalia Rosaline Sans.otf");
+}
+
+@font-face {
+    font-family: "avalanche";
+    src: url("fonts/Vintage Avalanche.otf");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nocturno";
+    src: url("fonts/NocturnobyCCBY.ttf");
+}
+
+/* GENERAL */
+
+body {
+    margin: 0;
+    background-image: url('img/BackTexture.png');
+    background-size: 10%;
+    color: #737373;
+    font-family: "cabin";
+}
+
+#welcomepicture {
+    min-height: 100vh;
+}
+
+.parallax-window {
+    min-height: 300px;
+    background: transparent;
+}
+
+.logocontainer {
+    height: 100vh;
+    width: 100%;
+}
+
+.welcomelogo {
+    position: relative;
+    display: block;
+    width: 35vw;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.welcomename {
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "natalia";
+    font-size: 16px;
+    letter-spacing: 1rem;
+    top: 36vh;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.arrowicon {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    top: 97vh;
+    left: 46vw;
+    opacity: 0.2;
+}
+
+.arrowmove {
+    width: 100px;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { -webkit-transform: translateY(0); transform: translateY(0); }
+    100% { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { -webkit-transform: translateY(0); transform: translateY(0); }
+    100% { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+}
+
+a {
+    text-decoration: none;
+    color: #CACACA;
+}
+
+.corps{
+    max-width:1200px;
+    width: 90%;
+    margin: 0 auto;
+/*    background-color: #222;*/
+}
+
+.corps p {
+    width: 90%;
+}
+
+.banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+}
+
+.mainTitle {
+    margin-top: 30px;
+    width: 50%;
+}
+
+.name {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "natalia";
+    font-size: 50%;
+    letter-spacing: 1rem;
+}
+
+.description {
+    padding: 20px;
+    width: 81%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-left: 50px;
+    font-family: "roboto";
+    color: #CACACA;
+    letter-spacing: 0.4rem;
+    -webkit-transform: scale(1,1.1);
+        -ms-transform: scale(1,1.1);
+            transform: scale(1,1.1);
+}
+
+.paragraphe {
+    text-indent: 50px;
+}
+
+.mef {
+    font-weight : bold;
+    color: #ADADAD;
+}
+
+/* MENU CATEGORIES */
+
+#contentMenu {
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #CACACA;
+    font-family: "intellecta";
+    font-size: 30px;
+}
+
+#contentMenu > * {
+    display: inline; 
+}
+
+.catlink:hover{
+    color: #A1A1A1;
+    cursor: pointer;
+}
+
+.current a{
+    text-decoration: underline;
+}
+
+/* SLIDER */
+
+.current {
+    color: white;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slideWindow {
+    width:300%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    right: 0px;
+    -webkit-transition: right 1s;
+    -o-transition: right 1s;
+    transition: right 1s;
+    margin-bottom: 80px;
+}
+
+.itemContainer {
+    padding: 20px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+/*  background-color: #222;*/
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+/* PROJETS */
+
+.itemContainer > * {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 171px;
+    margin: 15px;
+    border: 2px #000 solid;
+    background-color: #040404;
+}
+
+.comingsoon {
+    background-image: url(img/nosignal.jpg);
+    background-size: cover;
+}
+
+.comingsoon:hover {
+    cursor: default !important;
+}
+
+.iteminvisible {
+    opacity: 0;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.cap {
+    width: 100%;
+}
+
+.titre {
+  color: #FFF;
+  font-size: 25px;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-family: "natalia", "avalanche";
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.text {
+  color: #FFF;
+  font-size: 15px;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.cap{
+    -webkit-filter: blur(0);
+    filter:blur(0);
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    -o-transition: transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item:hover .cap{
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.item:hover .titre {
+    opacity: 0;
+}
+
+.formation {
+    padding: 50px 0px;
+    width: 81%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 30px;
+}
+
+/* POPUPS */
+
+#fondPopup {
+    display: none;
+    width: 100%;
+    height: 2000px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#fondPopup:hover {
+    cursor: pointer;
+}
+
+.closeicon {
+    width: 30px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.popup {
+    display: none;
+    z-index: 1001;
+    position: fixed;
+    width: 80%;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.player {
+    position: absolute;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.graphicContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.musicplayer {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.popupPictureLarge {
+    width: 60vw;
+}
+
+.popupPictureNarrow {
+    width: 60vh;
+}
+
+.popupPictureSquare {
+    width: 45vw;
+}
+
+.player iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    }
+
+.copyright {
+    color: #353535;
+    font-size: 12px;
+    padding-left: 10%;
+}
+
+.downloadcv {
+    padding: 3px;
+    border: 2px solid #FFF;
+    border-radius: 3px;
+}
+
+.downloadcv:hover {
+    color: #919191;
+    border-color: #919191;
+}
+
+@media (max-width: 1241px) {
+    
+    .itemContainer {
+        padding: 20px;
+    }
+    
+    .itemContainer > * {
+        height: 80px;
+        margin: 20px 30px;
+    }
+
+    .cap {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 80px;
+    }
+    
+    #capjegard {
+    height: ;
+    }
+    
+    #capterresnatales {
+    height: 180%;
+    }
+    
+    #capbriche {
+    height: 160%;
+    }
+    
+}
+
+@media (max-width: 870px) {
+    
+    .welcomename {
+        font-size: 10px;
+    }
+    
+    .parallax-window {
+        min-height: 200px;
+    }
+    
+    #menuspacing {
+    display: none;
+    }
+    
+    #menuspacing2 {
+    display: none;
+    }
+    
+    .catlink {
+        display: block;
+        border-radius: 2px;
+        margin-top: 2px;
+        background-color: #272727;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  === CAROUSEL === */
+
+
+
+* {-webkit-box-sizing:border-box;box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slideshow-container .mySlides {
+  display: none;
+}
+
+.slideshow-container .mySlides img {
+    width:100%
+}
+
+/* Next & previous buttons */
+.slideshow-container .prev, .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.slideshow-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slideshow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+
