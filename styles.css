@@ -489,6 +489,10 @@ h3 {
     position: absolute;
     }
 
+.mailto:hover {
+    color: #919191;
+}
+
 .copyright {
     color: #353535;
     font-size: 12px;
