@@ -61,12 +61,17 @@
 
 @font-face {
     font-family: "roboto";
-    src: url("RobotoSlab-Regular.ttf");
+    src: url("fonts/RobotoSlab-Regular.ttf");
 }
 
 @font-face {
     font-family: "nocturno";
     src: url("fonts/NocturnobyCCBY.ttf");
+}
+
+@font-face {
+    font-family: "canvas";
+    src: url("fonts/MADE Canvas Black.otf");
 }
 
 /* GENERAL */
@@ -196,11 +201,12 @@ a {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 50px;
-    font-family: "roboto";
+    font-family: "canvas";
     color: #CACACA;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.3rem;
+/*    text-transform: uppercase;*/
     -webkit-transform: scale(1,1.1);
         -ms-transform: scale(1,1.1);
             transform: scale(1,1.1);
@@ -224,8 +230,11 @@ h3 {
     text-align: center;
     text-decoration: none;
     color: #CACACA;
-    font-family: "intellecta";
-    font-size: 30px;
+    font-family: "canvas";
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+/*    text-transform: uppercase;*/
+    transform: scale(1,1.1);
 }
 
 #contentMenu > * {
