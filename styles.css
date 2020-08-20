@@ -96,6 +96,7 @@ body {
 .logocontainer {
     height: 100vh;
     width: 100%;
+    opacity: 1;
 }
 
 .welcomelogo {
